@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="90" id="KGk-i7-Jjw" customClass="PlaceTableViewCell" customModule="NearBy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zan-Nt-8eX">
+                        <rect key="frame" x="8" y="4" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2ao-5u-Jqh"/>
+                            <constraint firstAttribute="height" constant="80" id="9g9-6I-Q2r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Shabrawy (الشبراوى)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="930-Je-P8s">
+                        <rect key="frame" x="96" y="8" width="216" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bea-KR-Kb5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="King Faisal St." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-ms-1Pg">
+                        <rect key="frame" x="96" y="31" width="216" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="KS4-Tc-A6M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ac-qp-w0x">
+                        <rect key="frame" x="96" y="45" width="216" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="7Wd-Ww-6aX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abO-8E-ip5">
+                        <rect key="frame" x="96" y="59" width="216" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="ihI-CO-hde"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osn-sU-DT9">
+                        <rect key="frame" x="96" y="71" width="216" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="LCW-ad-or8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zan-Nt-8eX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="28J-iZ-8AN"/>
+                    <constraint firstItem="T1H-ms-1Pg" firstAttribute="top" secondItem="930-Je-P8s" secondAttribute="bottom" constant="2" id="4V9-TZ-ifZ"/>
+                    <constraint firstItem="4Ac-qp-w0x" firstAttribute="top" secondItem="T1H-ms-1Pg" secondAttribute="bottom" constant="1" id="794-nX-396"/>
+                    <constraint firstItem="T1H-ms-1Pg" firstAttribute="leading" secondItem="zan-Nt-8eX" secondAttribute="trailing" constant="8" id="FI3-Pm-tjZ"/>
+                    <constraint firstItem="930-Je-P8s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MDs-Pm-RYF"/>
+                    <constraint firstItem="930-Je-P8s" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TEn-u4-wEM"/>
+                    <constraint firstItem="Osn-sU-DT9" firstAttribute="leading" secondItem="zan-Nt-8eX" secondAttribute="trailing" constant="8" id="TS7-gO-7FK"/>
+                    <constraint firstItem="zan-Nt-8eX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="XvE-GQ-pcy"/>
+                    <constraint firstItem="abO-8E-ip5" firstAttribute="top" secondItem="4Ac-qp-w0x" secondAttribute="bottom" constant="1" id="Y0p-F8-Gvl"/>
+                    <constraint firstItem="4Ac-qp-w0x" firstAttribute="leading" secondItem="zan-Nt-8eX" secondAttribute="trailing" constant="8" id="abB-Cv-caP"/>
+                    <constraint firstAttribute="trailing" secondItem="Osn-sU-DT9" secondAttribute="trailing" constant="8" id="e1W-8N-Die"/>
+                    <constraint firstItem="T1H-ms-1Pg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="f0B-7C-SOb"/>
+                    <constraint firstItem="abO-8E-ip5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hCf-SI-KFh"/>
+                    <constraint firstItem="Osn-sU-DT9" firstAttribute="top" secondItem="4Ac-qp-w0x" secondAttribute="bottom" constant="13" id="oZn-iK-t0m"/>
+                    <constraint firstItem="4Ac-qp-w0x" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="owy-aa-oWt"/>
+                    <constraint firstItem="930-Je-P8s" firstAttribute="leading" secondItem="zan-Nt-8eX" secondAttribute="trailing" constant="8" id="sY6-eE-8Kj"/>
+                    <constraint firstItem="abO-8E-ip5" firstAttribute="leading" secondItem="zan-Nt-8eX" secondAttribute="trailing" constant="8" id="tHs-3c-xOI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeAddress1" destination="T1H-ms-1Pg" id="9Qf-g0-I11"/>
+                <outlet property="placeAddress2" destination="4Ac-qp-w0x" id="BEU-Xh-Qei"/>
+                <outlet property="placeAddress3" destination="abO-8E-ip5" id="Bbj-ib-R4O"/>
+                <outlet property="placeAddress4" destination="Osn-sU-DT9" id="rtu-hj-wab"/>
+                <outlet property="placeImage" destination="zan-Nt-8eX" id="mtQ-op-yop"/>
+                <outlet property="placeTitle" destination="930-Je-P8s" id="wqC-BV-LVQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="64" height="64"/>
+    </resources>
+</document>
