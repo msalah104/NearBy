@@ -74,46 +74,12 @@ class HomePresenterController: NSObject {
     }
     
     func getCachedPlaces() -> [Place] {
-//        if let path = Bundle.main.path(forResource: CACH_FILE_NAME, ofType: "plist") {
-//            
-//            //If your plist contain root as Array
-//            if let array = NSArray(contentsOfFile: path) as? [Place] {
-//                return array
-//            }
-//            
-//        }
-        
-        
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            
-            let path = dir.appendingPathComponent(CACH_FILE_NAME)
-                let array = NSArray(contentsOf: path) as? [Place]
-               
-                if  array == nil {
-                    return [Place]()
-                }
-                
-                return array!
-        }
-        return [Place]()
+        return NearByUserDefaults.getCachedPlaces()
     }
     
     func cachCurrentRequest(_ places:[Place]) {
-//        if let path = Bundle.main.path(forResource: CACH_FILE_NAME, ofType: "plist") {
-//            
-//            (places as NSArray).write(toFile: path, atomically: true)
-//            
-//        }
         
-        
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            
-            let path = dir.appendingPathComponent(CACH_FILE_NAME)
-            
-            let result = NSArray(array: places).write(to: path, atomically: false)
-            print("file : " + result.description)
-            
-        }
+        NearByUserDefaults.setCachedPlaces(places)
     }
     
     // MARK:- Reachability

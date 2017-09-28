@@ -16,6 +16,7 @@ struct Constants {
     
    // Constants
     static let UPDATE_MODE = "Places_Update_Mode"
+    static let CACH_PLACES = "cach"
     static let SUCCESS:Int = 200
   
     // URL

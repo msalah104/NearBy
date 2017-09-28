@@ -158,9 +158,12 @@ extension HomeViewController:HomeViewDelegate {
     
     // Error
     func someThingWrongHappend(){
-        self.table.isHidden = true
-        self.notficationImage.image = #imageLiteral(resourceName: "error")
-        self.notficationLable.text = "Somthing went wrong!!"
+        if places.count == 0 {
+
+            self.table.isHidden = true
+            self.notficationImage.image = #imageLiteral(resourceName: "error")
+            self.notficationLable.text = "Somthing went wrong!!"
+        }
     }
     
     func noNearPlaces(){

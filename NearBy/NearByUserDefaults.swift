@@ -19,6 +19,27 @@ class NearByUserDefaults: NSObject {
         
     }
     
+    class func getCachedPlaces() -> [Place]{
+        
+        if let archivedPlaces = defaults.object(forKey: Constants.CACH_PLACES) {
+            let places:[Place] = NSKeyedUnarchiver.unarchiveObject(with: archivedPlaces as! Data) as! [Place]
+            return places
+        } else {
+            // Default state is single time update
+            return [Place]()
+        }
+    }
+    
+    
+    class func setCachedPlaces(_ places:[Place]){
+        
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: places)
+        
+        defaults.set(encodedData, forKey: Constants.CACH_PLACES)
+        
+        
+    }
+    
     class func getCurrentUpdateMode() -> PlacesUpdateType{
         
         if let mode = defaults.object(forKey: Constants.UPDATE_MODE) {
